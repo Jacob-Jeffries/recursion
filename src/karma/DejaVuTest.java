@@ -14,4 +14,20 @@ public class DejaVuTest {
     assertEquals(1, factorial(1));
     assertEquals(1, factorial(0));
   }
+
+  @Test
+  public void testCountdown(){
+    countdown(5);
+    countup(5);
+  }
+
+  @Test
+  public void testFibonaccii(){
+    assertEquals(1, Fibonacci(1));
+    assertEquals(1, Fibonacci(1));
+    assertEquals(2, Fibonacci(2));
+    assertEquals(3, Fibonacci(3));
+    assertEquals(5, Fibonacci(4));
+    assertEquals(8, Fibonacci(5));
+  }
 }
