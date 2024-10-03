@@ -29,4 +29,14 @@ public class DejaVu {
       System.out.println(n);
     }
   }
+
+  public static int fibonacci(int anIndex){
+    if (anIndex == 0){
+      return 1;
+    } else if(anIndex == 1){
+      return 1;
+    } else {
+      return fibonacci(anIndex-1) + fibonacci(anIndex-2);
+    }
+  }
 }
