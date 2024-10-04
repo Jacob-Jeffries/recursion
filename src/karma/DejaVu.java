@@ -39,4 +39,30 @@ public class DejaVu {
       return fibonacci(anIndex-1) + fibonacci(anIndex-2);
     }
   }
+
+  public static int multiply(int x, int y){
+    if( x == 0 || y == 0) {
+      return 0;
+    }else{
+      return x + multiply(x, (y-1));
+    }
+  }
+
+  public static int power(int x, int y){
+    if ( x == 0){
+      return 0;
+    } else if (y == 0){
+      return 1;
+    }else{
+      return x * power(x, (y-1));
+    }
+  }
+
+  public static String reverse(String aWord){
+    if (aWord.length() < 2){
+      return aWord;
+    }else{
+      return reverse(aWord.substring(1)) + aWord.charAt(0);
+    }
+  }
 }

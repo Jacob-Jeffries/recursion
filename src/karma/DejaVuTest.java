@@ -57,7 +57,7 @@ public class DejaVuTest {
     assertEquals("radar", reverse("radar"));
   }
 
-  // M Choose things
+  // N choose K things.
   @Test
 
 }
