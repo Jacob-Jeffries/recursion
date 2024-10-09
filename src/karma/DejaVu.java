@@ -68,7 +68,11 @@ public class DejaVu {
 
   public static int nChooseK(int n, int k){
     if (n == k){
-      return (int) 1;
+      return 1;
+    } else if ( k == 0) {
+      return 1;
+    } else {
+      return nChooseK(n-1, k-1) + nChooseK(n-1, k);
     }
   }
 }
