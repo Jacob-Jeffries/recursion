@@ -65,4 +65,10 @@ public class DejaVu {
       return reverse(aWord.substring(1)) + aWord.charAt(0);
     }
   }
+
+  public static int nChooseK(int n, int k){
+    if (n == k){
+      return (int) 1;
+    }
+  }
 }
